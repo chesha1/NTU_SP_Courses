@@ -9,5 +9,5 @@ I may introcude many textbooks and they may not always be needed. You do not hav
 
 ## EE6204 System Analysis  
 This course is actually about operations research, I do not like the names of NTU courses, why do we need to call operations research system analysis? This course will introduce linear programming, ? ????? chronologically.  
-# Textbooks
+### Textbooks
 1 运筹学导论，第九版，胡广权
