@@ -17,6 +17,12 @@ This book has Chinese translated edition. This book is mostly recommended. It is
 ## EE6401 Adavanced Digital Signal Processing
 Classic Digital Signal Processing course. It has some connection with EE6204 in terms of DFT.
 ### Textbooks 
+#### Digital Signal Processing: Pearson New International Edition, 4th edition, Proakis
+This book is the only textbook used by the lecturer, and I would like to remind you that It has a solution manual.
+#### Digital Signal Processing: Principles, Algorithms, and Applications, 4th edition, Proakis
+This book actually has similar content with the former book, and more importantly it has Chinese translated edition and solution manual, so I recommend it more compared with the former one.
+
+
 
 ## EE6427 Video Signal Processing
 This course is a little bit complicated as it does not follow any of the textbooks below. It synthesizes many short parts of the textbooks.
