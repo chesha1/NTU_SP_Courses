@@ -20,7 +20,7 @@ Classic Digital Signal Processing course. It has some connection with EE6204 in 
 #### Digital Signal Processing: Pearson New International Edition, 4th edition, Proakis
 This book is the only textbook used by the lecturer, and I would like to remind you that It has a solution manual.
 #### Digital Signal Processing: Principles, Algorithms, and Applications, 4th edition, Proakis
-This book actually has similar content with the former book, and more importantly it has Chinese translated edition and solution manual, so I recommend it more compared with the former one.
+This book actually has similar content with the former book, and more importantly it has Chinese translated edition and solution manual, so I recommend it more compared with the former one. As it is the textbook used by lecturer, I recommend it most.
 #### Discrete-Time Signal Processing, 3rd edition, Alan V. Oppenheim
 This book has same or more reputation than the former book, and it is also a great book. You can choose either of them to read. This book also has solution manual and Chinese translated version.
 
