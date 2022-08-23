@@ -30,7 +30,10 @@ This book has same or more reputation than the former book, and it is also a gre
 This course is a little bit complicated as it does not follow any of the textbooks below. It synthesizes many short parts of the textbooks.
 ### Textbooks 
 #### Digital Image Processing, 4th edition, Gonzalez
-This book has Chinese translated edition. This book is mostly recommended. It is a classic textbook in China, so you may be familiar with it.
+This book has Chinese translated edition. This book is mostly recommended. It is a classic textbook in China, so you may be familiar with it. This book includes many theortical things and formulas.
+
+#### Fundamentals of Multimedia, 2rd edition, Ze-Nian Li
+For the basic concept of multimedia, this book is great and deserves recommended. For the theory behind the basic concept, this book just gives a brief introduction. So I may not recommend this book.
 
 ## EE7401 Probability & Random Processes
 This course is about propbability theory with measure thoery. Measure theory is another hard math thory, so I recommend 
