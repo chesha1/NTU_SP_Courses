@@ -39,7 +39,7 @@ For the basic concept of multimedia, this book is great and deserves recommended
 It is the reference book of the course. The typesetting of the book is great and the book itself looks good, but in terms of content, I do not recommend it.
 
 #### Image and video compression for multimedia engineering: fundamentals, algorithms, and standards 
-This book is better than the former two books.
+This book is better than the former two books. In terms of encoding of JPEG, it gives the detailed introduciton.
 
 
 
