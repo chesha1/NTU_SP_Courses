@@ -38,6 +38,9 @@ For the basic concept of multimedia, this book is great and deserves recommended
 #### Multimedia Signal Processing: Theory and Applications in Speech, Music and Communications, 1st edition, Saeed V. Vaseghi
 It is the reference book of the course. The typesetting of the book is great and the book itself looks good, but in terms of content, I do not recommend it.
 
+#### Image and video compression for multimedia engineering: fundamentals, algorithms, and standards 
+This book is better than the former two books.
+
 
 
 ## EE7401 Probability & Random Processes
