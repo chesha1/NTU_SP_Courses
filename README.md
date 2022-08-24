@@ -35,5 +35,10 @@ This book has Chinese translated edition. This book is mostly recommended. It is
 #### Fundamentals of Multimedia, 2rd edition, Ze-Nian Li
 For the basic concept of multimedia, this book is great and deserves recommended. For the theory behind the basic concept, this book just gives a brief introduction. So I may not recommend this book.
 
+#### Multimedia Signal Processing: Theory and Applications in Speech, Music and Communications, 1st edition, Saeed V. Vaseghi
+It is the reference book of the course. The typesetting of the book is great and the book itself looks good, but in terms of content, I do not recommend it.
+
+
+
 ## EE7401 Probability & Random Processes
 This course is about propbability theory with measure thoery. Measure theory is another hard math thory, so I recommend 
