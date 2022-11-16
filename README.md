@@ -1,7 +1,7 @@
 # NTU_SP_Courses
 Nanyang Technological University School of EEE Signal Processing Program  
 This repository will give some detailed information of the SP program courses, and the content is not always correct.  
-The language used in this repository will be English and Chinses, and the understanding of course content is often written in Chinese.  
+The language used in this repository will be English and Chinese, and the understanding of course content is often written in Chinese.  
 I may introcude many textbooks and they may not always be needed. You do not have to read all of them, but I still recommend you to at least just scan them briefly. Same thing will be taught and explained differently in different books. All the books mentioned in this repository can be found in zlibrary.
   
 关于NTU EEE学院 信号处理项目课程的一些具体内容，不都对，关于课程内容的理解主要以中文书写  
