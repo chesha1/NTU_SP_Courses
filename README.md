@@ -8,7 +8,9 @@ I may introcude many textbooks and they may not always be needed. You do not hav
 
 
 ## EE6204 System Analysis  
-This course is actually about operations research, I do not like the names of NTU courses, why do we need to call operations research system analysis? This course will introduce linear programming, ? ????? chronologically.  
+This course will introduce linear programming, non-linear programming, random process(especially Markov chain), queue model and decision analysis chronologically.  
+Content of this course is not hard to understand, so I will not recommend many textbooks and notes are good enough to learn.  
+There will be two open-book quizzes and they are not hard. Final exam is also not hard. There are not much thing to recite to prepare for the exam.
 ### Textbooks  
 #### Introduction to Operations Research, 9th edition, Frederick S. Hillier  
 This book has Chinese translated edition. This book is mostly recommended. It is a classic textbook in China, so you may be familiar with it.
