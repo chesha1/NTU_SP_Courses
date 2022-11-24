@@ -1,0 +1,420 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\linespread{1.5}
+\title{System Anaylsis Exams}
+\author{CHEN SHANG }
+\date{October 2022}
+
+\begin{document}
+
+\maketitle
+
+{\Huge
+Personal answers.\par
+May not always be right.\par}
+\section*{2018-2019}
+\subsection*{1}
+\subsubsection*{(a)}
+\subsubsection*{(b)}
+initial solution:\par\indent
+\par
+\begin{tabular}{|l|l|l|l|}
+\hline
+  & 1  & 2  & 3  \\ \hline
+1 &    & 60 &    \\ \hline
+2 & 40 &    & 30 \\ \hline
+3 &    & 5  & 45 \\ \hline
+\end{tabular}\par\indent
+\par
+optimal solution:\par\indent
+\par
+$\begin{cases}u_{1}+v_{2}=24\\
+u_{2}+v_{1}=18\\
+u_{2}+v_{3}=20\\
+u_{3}+v_{2}=25\\
+u_{3}+v_{3}=26\end{cases}$
+$\begin{cases}u_{1}=1\\
+u_{2}=-4\\
+u_{3}=2\end{cases}$
+$\begin{cases}v_{1}=22\\
+v_{2}=23\\
+v_{3}=24\end{cases}$\par\indent
+\par\indent
+\par
+$\begin{cases}x_{11}=-3\\
+x_{13}=-1\\
+x_{22}=4\\
+x_{31}=-4\end{cases}$\par\indent
+\par\indent
+\par
+\begin{tabular}{|l|l|l|l|}
+\hline
+  & 1  & 2  & 3  \\ \hline
+1 & 40 & 15  & 5 \\ \hline
+2 &    &  & 70 \\ \hline
+3 &   &  50  &  \\ \hline
+\end{tabular}
+\begin{tabular}{|l|l|l|l|}
+\hline
+  & 1  & 2  & 3  \\ \hline
+1 &  & 55 & 5 \\ \hline
+2 &  &    & 70 \\ \hline
+3 & 40  & 10 &    \\ \hline
+\end{tabular}
+\subsubsection*{(c)}
+$\Delta \geq -1$
+
+\subsection*{2}
+\subsubsection*{(a)}
+$\textbf{Min} \  8x_{1}^{2}+28x_{1}x_{2}$\par\indent
+\par
+$\textbf{Subject to:} \\ \frac{x_{1}^{2}x_{2}}{2.5}\geq98\\
+x_{1}\geq0, \ x_{1}\geq0
+$
+\subsubsection*{(b)}
+$L=8x_{1}^{2}+28x_{1}x_{2}+\lambda(\frac{2x_{1}^{2}x_{2}}{5}-98)$\par\indent
+\par
+We have\par
+$\frac{\partial L}{\partial x_{1}}=16x_{1}+28x_{2}+\lambda(\frac{4x_{2}x_{1}}{5})=0$\par
+$\frac{\partial L}{\partial x_{2}}=28x_{1}+\lambda(\frac{2x_{1}^{2}}{5})=0$\par
+$\frac{\partial L}{\partial \lambda}=\frac{2x_{1}^{2}x_{2}}{5}-98=0$\par
+$\begin{cases}x_{1}=7.541\\
+x_{2}=4.309\\
+\lambda=-0.928\end{cases}$\par\indent
+\par
+Hessian matrix $H=\begin{bmatrix}
+\dfrac{\partial ^{2}L}{\partial x_{1}^{2}} & \dfrac{\partial ^{2}L}{\partial x_{1}\partial x_{2}} \\
+\\
+\dfrac{\partial ^{2}L}{\partial x_{2}\partial x_{1}} & \dfrac{\partial ^{2}L}{\partial x_{2}^{2}}
+\end{bmatrix}=\begin{bmatrix}
+-16 & -28 \\
+-28 & 0
+\end{bmatrix}$\par\indent
+\par\indent
+\par
+$|\lambda E-H|=|\begin{bmatrix}
+\lambda+16 & 28 \\
+28 & \lambda
+\end{bmatrix}|=0$\par\indent
+\par\indent
+\par
+$\lambda_{1}=-37.12, \ \lambda_{2}=21.12$
+
+
+\subsection*{3}
+\subsubsection*{(a)}
+Yes, As the shop carries only 1 car in the shop, $B_{k}$ only depends on the current week. 
+
+
+\subsection*{4}
+\subsubsection*{(a)}
+State space $S=\{0,1,2\}$\par
+$0:$ \ baking\par
+$1:$ \ preparation\par
+$2:$ \ repairting\par
+\subsubsection*{(b)}
+$\pi_{j}(\sum _{k\neq j}q_{jk})=\sum _{k\neq j}q_{kj}\pi_{k}$\par\indent
+\par
+$Q=\begin{bmatrix}
+-b-f & b & f \\
+p & -p & 0 \\
+0 & r & -r
+\end{bmatrix}$\par\indent
+\par
+$\pi Q=0$\par\indent
+\par
+$\begin{cases}(-b-f)\pi_{0}+p\pi_{1}=0\\
+b\pi_{0}-p\pi_{1}+r\pi_{2}=0\\
+f\pi_{0}-r\pi_{2}=0\end{cases}$\par\indent
+\par
+$\pi_{0}+\pi_{1}+\pi_{2}=1$
+\subsubsection*{(c)}
+Average production rate $R=b\pi_{0}$
+\subsubsection*{(d)}
+$R$ increase, as $\pi_{0}$ increase
+
+\subsection*{5}
+\subsubsection*{(a)}
+\begin{tabular}{|l|l|l|}
+\hline
+    & MP & TR  \\ \hline
+MP  & 1  & 0.2 \\ \hline
+TR  & 5  & 1   \\ \hline
+SUM & 6  & 1.2 \\ \hline
+\end{tabular}\par\indent
+\par\indent
+\par
+\begin{tabular}{|l|l|l|}
+\hline
+    & MP  & TR  \\ \hline
+MP  & 1/6 & 1/6 \\ \hline
+TR  & 5/6 & 5/6 \\ \hline
+SUM & 6   & 1.2 \\ \hline
+\end{tabular}\par\indent
+\par\indent
+\par
+\begin{tabular}{|l|l|l|l|}
+\hline
+   & MP  & TR  & Priority \\ \hline
+MP & 1/6 & 1/6 & 1/6      \\ \hline
+TR & 5/6 & 5/6 & 5/6      \\ \hline
+\end{tabular}\par\indent
+\par\indent
+\par
+Level 3 priority matrix:\par\indent
+\par
+$\begin{bmatrix}
+0.129 & 0.545 \\
+0.277 & 0.273 \\
+0.595 & 0.182
+\end{bmatrix}$\par\indent
+\par
+composite priority:\par\indent
+\par
+$\begin{bmatrix}
+0.129 & 0.545 \\
+0.277 & 0.273 \\
+0.595 & 0.182
+\end{bmatrix}\times \begin{bmatrix} 1/6 \\ 5/6 \end{bmatrix}=\begin{bmatrix}
+0.476\\
+0.274\\
+0.251
+\end{bmatrix}$\par\indent
+\par
+I recommend company choose company U1.
+
+\subsubsection*{(b)}
+$\begin{bmatrix}
+1 & 0.2 \\
+5 & 1 \\
+\end{bmatrix}\begin{bmatrix}
+1/6\\
+5/6\\
+\end{bmatrix}=\begin{bmatrix}
+1/3\\
+5/3\\
+\end{bmatrix}$\par\indent
+\par
+$\lambda_{max}=(\frac{1}{3}/\frac{1}{6}+\frac{5}{3}/\frac{5}{6})/2=2$\par
+$C.I.=\frac{\lambda_{max}-n}{n-1}=0$\par
+$CR=\frac{CI}{RI}=0$\par
+Matrix $A_{\textbf{MP}}$ is perfectly consistent.
+
+\subsubsection*{(c)}
+\begin{tabular}{|l|l|l|}
+\hline
+    & MP & TR  \\ \hline
+MP  & 1  & 2 \\ \hline
+TR  & 0.5  & 1   \\ \hline
+SUM & 1.5  & 3 \\ \hline
+\end{tabular}\par\indent
+\par\indent
+\par
+
+
+
+
+
+\section*{2020-2021}
+\subsection*{1}
+\subsubsection*{(a)}
+Supposing that the factory sells $x_{1},x_{2},x_{3}$ packages of PA, PB, PC.\par
+$\textbf{Max} \  2.5x_{1}+2.2x_{2}+2.1x_{3}$\par
+Subject to:\par\indent
+\par
+$\begin{cases}
+0.2x_{1}+0.18x_{2}+0.16x_{3} \leq 10\\
+1.5x_{1}+1.7x_{2}+1.8x_{3} \leq 100\\
+0.5x_{1}+0.35x_{2}+0.6x_{3} \leq 30\\
+x_{1}, \ x_{2}, \ x_{3} \geq 0\end{cases}$
+\subsubsection*{(b)}
+$\textbf{Max} \  2.5x_{1}+2.2x_{2}+2.1x_{3}$\par
+Subject to:\par\indent
+\par
+$\begin{cases}
+0.2x_{1}+0.18x_{2}+0.16x_{3}+x_{4} = 10\\
+1.5x_{1}+1.7x_{2}+1.8x_{3}+x_{5} = 100\\
+0.5x_{1}+0.35x_{2}+0.6x_{3}+x_{6} = 30\\
+x_{1}, \ x_{2}, \ x_{3}, \ x_{4}, \ x_{5}, \ x_{6} \geq 0\end{cases}$\par\indent
+\par
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+         &                       & 2.5      & 2.2      & 2.1      & 0        & 0        & 0        &     &                       \\ \hline
+$C_{B}$ & $X_{B}$              & $x_{1}$ & $x_{2}$ & $x_{3}$ & $x_{4}$ & $x_{5}$ & $x_{6}$ & $b$   & $\theta$ \\
+\hline0& $x_{4}$     & 0.2 & 0.18 & 0.16 & 1 & 0 & 0 & 10  & 50\\
+\hline0& $x_{5}$     & 1.5 & 1.7  & 1.8  & 0 & 1 & 0 & 100 & 66.67\\
+\hline0& $x_{6}$     & 0.5 & 0.35 & 0.6  & 0 & 0 & 1 & 30  & 60\\
+\hline&$\sigma$ & 2.5 & 2.2  & 2.1  & 0 & 0 & 0 &     &\\
+\hline
+\end{tabular}\par\indent
+\par\indent
+\par
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+         &                       & 2.5      & 2.2      & 2.1      & 0        & 0        & 0        &     &                       \\ \hline
+$C_{B}$ & $X_{B}$              & $x_{1}$ & $x_{2}$ & $x_{3}$ & $x_{4}$ & $x_{5}$ & $x_{6}$ & $b$   & $\theta$ \\
+\hline2.5&$x_{1}$& 1   & 0.9   & 0.8  & 5    & 0 & 0 & 50  & 62.5\\
+\hline0  &$x_{5}$& 0   & 0.35  & 0.6  & -7.5 & 1 & 0 & 25 & 41.67\\
+\hline0  &$x_{6}$& 0   & -0.1  & 0.2  & -2.5 & 0 & 1 & 5  & 25\\
+\hline&$\sigma$ & 0    & -0.05 & 0.1  & -12.5& 0 & 0 &     &\\
+\hline
+\end{tabular}\par\indent
+\par\indent
+\par
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+         &                       & 2.5      & 2.2      & 2.1      & 0        & 0        & 0        &     &                       \\ \hline
+$C_{B}$ & $X_{B}$              & $x_{1}$ & $x_{2}$ & $x_{3}$ & $x_{4}$ & $x_{5}$ & $x_{6}$ & $b$   & $\theta$ \\
+\hline2.5&$x_{1}$& 1   & 1.3   & 0  & 15    & 0 & -4 & 30  & \\
+\hline0  &$x_{5}$& 0   & 0.65  & 0  & 0 & 1 & -3 & 10 & \\
+\hline2.1  &$x_{3}$& 0   & -0.5  & 1  & -12.5 & 0 & 5 & 25  & \\
+\hline&$\sigma$ & 0    & 0 & 0  & -11.25& 0 & -0.5 &     &\\
+\hline
+\end{tabular}\par\indent
+\par\indent
+\par
+$x_{1}=30, \ x_{2}=0, \ x_{3}=25$
+
+
+
+\subsubsection*{(c)}
+$b'=B^{-1}b=\begin{bmatrix}
+15 & 0 & -4\\
+0 & 1 & -3\\
+-12.5 & 0 & 5
+\end{bmatrix}\begin{bmatrix}
+10\\
+100\\
+30-\Delta
+\end{bmatrix}=\begin{bmatrix}
+30+4\Delta\\
+10+3\Delta\\
+25-5\Delta
+\end{bmatrix}$\par\indent
+\par
+$x_{1}=30+4\Delta, \ x_{2}=0, \ x_{3}=25-5\Delta$\par
+Previous solution is neither optimal nor feasible.
+\subsection*{2}
+\subsubsection*{(a)}
+$\textbf{Min} \  z=2\pi Cx_{1}^{2}+2\pi Cx_{1}x_{2}$\par\indent
+\par
+$\textbf{Subject to:} \\ 
+\pi x_{1}^{2}x_{2}=V\\
+x_{1}\geq0, \ x_{2}\geq0
+$
+\subsubsection*{(b)}
+$L=2\pi Cx_{1}^{2}+2\pi Cx_{1}x_{2}+\lambda(\pi x_{1}^{2}x_{2}-V)$\par
+$\frac{\partial L}{\partial x_{1}}=4\pi Cx_{1}+2\pi Cx_{2}+\lambda(2\pi x_{1}x_{2})=0$\par
+$\frac{\partial L}{\partial x_{2}}=2\pi Cx_{1}+\lambda(\pi x_{1}^{2})=0$\par
+$\frac{\partial L}{\partial \lambda}=\pi x_{1}^{2}x_{2}-V=0$\par\indent
+\par
+$\begin{cases}
+x_{1}= \dfrac{V(-\frac{16\pi C^{3}}{V})^{\frac{2}{3}}}{8C^{2}\pi}\\
+\\
+x_{2}= \dfrac{V(-\frac{16\pi C^{3}}{V})^{\frac{2}{3}}}{4C^{2}\pi}\\
+\\
+\lambda= (-\frac{16\pi C^{3}}{V})^{\frac{1}{3}}
+\end{cases}$\par\indent
+\par
+Hessian matrix $H=\begin{bmatrix}
+\dfrac{\partial ^{2}L}{\partial x_{1}^{2}} & \dfrac{\partial ^{2}L}{\partial x_{1}\partial x_{2}} \\
+\\
+\dfrac{\partial ^{2}L}{\partial x_{2}\partial x_{1}} & \dfrac{\partial ^{2}L}{\partial x_{2}^{2}}
+\end{bmatrix}=\begin{bmatrix}
+-4\pi C & -2\pi C \\
+-2\pi C & 0
+\end{bmatrix}$\par\indent
+\par\indent
+\par
+$|\lambda E-H|=|\begin{bmatrix}
+\lambda+4\pi C & 2\pi C \\
+2\pi C & \lambda
+\end{bmatrix}|=0$\par\indent
+\par\indent
+\par
+$\lambda=(-2\pm 2\sqrt{2})\pi C$
+
+\subsubsection*{(c)}
+$z=2\pi Cx_{1}^{2}+2\pi Cx_{1}x_{2}=\dfrac{3V^{2}(-\frac{16\pi C^{3}}{V})^{\frac{4}{3}}}{32C^{3}\pi}$\par\indent
+\par
+If $V'=0.95V$, $z'=0.966z$
+
+\subsection*{3}
+\subsubsection*{(a)}
+$P_{A}=\begin{bmatrix}
+\frac{1}{5}&\frac{4}{5}\\
+\frac{1}{3}&\frac{2}{3}
+\end{bmatrix}, \ 
+P_{B}=\begin{bmatrix}
+\frac{1}{2}&\frac{1}{2}\\
+\frac{1}{10}&\frac{9}{10}
+\end{bmatrix}$\par
+\subsubsection*{(b)}
+Strategy (A):\par
+$E(T_{0})=\frac{1}{1-p_{00}}=\frac{5}{4}$\par
+$E(T_{1})=\frac{1}{1-p_{11}}=3$\par
+Strategy (B):\par
+$E(T_{0})=\frac{1}{1-p_{00}}=2$\par
+$E(T_{1})=\frac{1}{1-p_{11}}=10$\par
+\subsubsection*{(c)}
+Strategy (A):\par
+$|\lambda E-P|=0$\par
+$\lambda_{1}=-\frac{2}{15}, \ \lambda_{2}=1$\par\indent
+\par
+$Q=\begin{bmatrix}
+-12&1\\
+5&1
+\end{bmatrix}, \  Q^{-1}=\begin{bmatrix}
+-\frac{1}{17}&\frac{1}{17}\\
+\frac{5}{17}&\frac{12}{17}
+\end{bmatrix}, \ D=\begin{bmatrix}
+-\frac{5}{12}&0\\
+0&1
+\end{bmatrix}  $\par\indent
+\par
+when n goes to infinity:\par\indent
+\par
+$P^{n}=QD^{n}Q^{-1}=\begin{bmatrix}
+\frac{5}{17}&\frac{12}{17}\\
+\frac{5}{17}&\frac{12}{17}
+\end{bmatrix}$\par\indent
+\par
+$\pi(n)=\pi(0)P^{n}=\begin{bmatrix}
+\frac{5}{17}&\frac{12}{17}
+\end{bmatrix}$\par\indent
+\par
+Strategy (B):\par
+\subsubsection*{(d)}
+Strategy (A):\par
+Expected profit $=\frac{5}{17} \times(500,000-200,000)+\frac{12}{17} \times2,000,000=1,500,000 $\par
+Strategy (B):\par
+
+
+
+\section*{2021-2022}
+\subsection*{1}
+\subsubsection*{(a)}
+\subsubsection*{(b)}
+
+\subsection*{2}
+\subsubsection*{(a)}
+\subsubsection*{(b)}
+
+\subsection*{3}
+\subsubsection*{(a)}
+(i) $P(a,b)=\sum ^{b}_{i=a}P( X= i)=e^{-\lambda}\sum ^{b}_{i=a}\frac{\lambda^{i}}{i!}$\par
+(ii) $P(a,b)=\sum ^{b}_{i=0}P( X= i)=e^{-\lambda}\sum ^{b}_{i=0}\frac{\lambda^{i}}{i!}$\par
+(iii) $P(a,b)=1-\sum ^{a-1}_{i=0}P( X= i)=1-e^{-\lambda}\sum ^{a-1}_{i=0}\frac{\lambda^{i}}{i!}$\par
+\subsubsection*{(b)}
+
+\subsection*{4}
+\subsubsection*{(a)}
+\subsubsection*{(b)}
+\subsubsection*{(c)}
+
+\subsection*{5}
+\subsubsection*{(a)}
+\subsubsection*{(b)}
+\subsubsection*{(c)}
+\end{document}
