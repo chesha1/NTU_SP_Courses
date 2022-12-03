@@ -1,0 +1,253 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\linespread{1.5}
+\title{Advanced Digital Signal Processing Exams}
+\author{CHEN SHANG }
+\date{Nov 2022}
+
+\begin{document}
+
+\maketitle
+{\Huge
+Personal answers.\par
+May not always be right.\par}
+\section*{2018-2019}
+\subsection*{1.}
+\subsubsection*{(a)}
+\subsubsection*{(b)}
+
+\subsection*{2.}
+\subsubsection*{(a)}
+(i)\par
+(ii)\par
+\subsubsection*{(b)}
+
+\subsection*{3.}
+\subsubsection*{(a)}
+\subsubsection*{(b)}
+\subsubsection*{(c)}
+
+\subsection*{4.}
+\subsubsection*{(a)}
+\subsubsection*{(b)}
+\subsubsection*{(c)}
+
+\subsection*{5.}
+\subsubsection*{(a)}
+\subsubsection*{(b)}
+\subsubsection*{(c)}
+\clearpage
+
+\section*{2019-2020}
+\subsection*{1.}
+\subsubsection*{(a)}
+\subsubsection*{(b)}
+$\uparrow 5 \ \downarrow 5 \ \downarrow 3 \ \uparrow 3$\par
+$\downarrow 3 \ \uparrow 3$\par
+$y(n)=\begin{cases}
+x(n) \ & n=0,\pm 3,\pm6...\\
+0 \ &{\rm otherwise}
+\end{cases}$
+\subsection*{2.}
+\subsubsection*{(a)}
+$V(z)=\frac{1}{D}\sum_{k=0}^{D-1}H_{D}(e^{-j2\pi\frac{ k}{D}}z^{\frac{1}{D}})X(e^{-j2\pi\frac{ k}{D}}z^{\frac{1}{D}})=\frac{1}{2}[X(z^{\frac{1}{2}})+X(-z^{\frac{1}{2}})]$\par
+$W(z)=\frac{1}{2}z^{-\frac{1}{2}}[X(z^{\frac{1}{2}})-X(-z^{\frac{1}{2}})]$\par
+$V_{n}(z)=\frac{1}{2}[X(z)+X(-z)]$\par
+$W_{n}(z)=\frac{1}{2}z^{-1}[X(z)-X(-z)]$\par
+$Y(z)=W_{n}(z)+z^{-1}V_{n}(z)$\par
+\subsubsection*{(b)}
+(i)\par
+$F_{SC}=100$\par
+$D=\frac{F}{2F_{SC}}=50$\par
+$\Delta f=\frac{f_{s}-f_{p}}{F}=\frac{65-60}{10\times 10^3}$\par
+$M=\frac{-10{\rm log}_{10}\delta_{s}\delta_{p}-13}{14.6\Delta f}+1=5000$\par
+???
+(ii)\par
+
+\subsection*{3.}
+\subsubsection*{(a)}
+(i)\par
+(ii)\par
+(iii)\par
+\subsubsection*{(b)}
+$\begin{bmatrix}
+H_{0}(z)\\
+H_{1}(z)\\
+H_{2}(z)\\
+\end{bmatrix}=\begin{bmatrix}
+4 &6 &1\\
+2 &1 &0\\
+1 &0 &0\\
+\end{bmatrix}\begin{bmatrix}
+1\\
+z^{-1}\\
+z^{-2}\\
+\end{bmatrix}$\par\indent
+\par\indent\par
+$P(z)=\begin{bmatrix}
+4 &6 &1\\
+2 &1 &0\\
+1 &0 &0\\
+\end{bmatrix}$\par\indent
+\par\indent
+\par
+$Q(z)=P^{-1}(z)=\begin{bmatrix}
+0 &0 &1\\
+0 &1 &-2\\
+1 &-6 &8\\
+\end{bmatrix}$\par\indent
+\par\indent
+\par
+$G(z)=\begin{bmatrix}
+G_{0}(z)\\
+G_{1}(z)\\
+G_{2}(z)\\
+\end{bmatrix}=z^{-2}\begin{bmatrix}
+0 &0 &1\\
+0 &1 &-2\\
+1 &-6 &8\\
+\end{bmatrix}\begin{bmatrix}
+1\\
+z^{-1}\\
+z^{-2}\\
+\end{bmatrix}=\begin{bmatrix}
+1\\
+z^{-1}-2\\
+z^{-2}-6z^{-1}+8\\
+\end{bmatrix}$\par
+
+\subsection*{4.}
+\subsubsection*{(a)}
+\subsubsection*{(b)}
+\subsubsection*{(c)}
+\subsubsection*{(d)}
+
+\subsection*{5.}
+\subsubsection*{(a)}
+\subsubsection*{(b)}
+
+\clearpage
+
+
+\section*{2020-2021}
+\subsection*{1.}
+\subsubsection*{(a)}
+(i)\par
+(ii)\par
+\subsubsection*{(b)}
+
+\subsection*{2.}
+\subsubsection*{(a)}
+\subsubsection*{(b)}
+
+
+\subsection*{3.}
+\subsubsection*{(a)}
+\subsubsection*{(b)}
+
+
+\subsection*{4.}
+\subsubsection*{(a)}
+\subsubsection*{(b)}
+(i)\par
+(ii)\par
+(iii)\par
+
+
+\clearpage
+
+
+
+
+
+
+\section*{2021-2022}
+\subsection*{1.}
+\subsubsection*{(a)}
+(i)\par
+$x(n)=x_{a}(nT_{s})=x_{a}(\frac{n}{20})=2cos(\frac{3\pi n}{10})+sin(\frac{3\pi n}{5})$\par
+(ii)\par
+$V(z)=\frac{1}{D}\sum_{k=0}^{D-1}X(z^{\frac{1}{D}}e^{-j\frac{2\pi k}{D}})=\frac{1}{2}[X(z^{\frac{1}{2}})+X(-z^{\frac{1}{2}})]$\par
+$z=e^{j\omega}$\par
+$V(\omega)=\frac{1}{2}[X(e^{j\frac{\omega}{2}})+X(e^{j(\frac{\omega}{2}-\pi)})]=\frac{1}{2}[X(\frac{\omega}{2})+X(\frac{\omega}{2}-\pi)]$\par
+(iii)\par
+(iv)\par
+???
+\subsubsection*{(b)}
+(i)\par
+$\Delta f=\frac{f_{s}-f_{p}}{F}$\par
+$N=\frac{-10{\rm log}_{10}\delta_{s}\delta_{p}-13}{14.6\Delta f}+1=762$\par
+$762\div 6=127$\par
+(ii)\par
+Week7 \ 41:16
+
+
+\subsection*{2.}
+\subsubsection*{(a)}
+(i)\par
+$V=X+\beta V z^{-2}$\par
+$Y=\alpha V+Vz^{-1}+Vz^{-2}$\par
+$\frac{V}{X}=\frac{1}{1-\beta z^{-2}}$\par
+$\frac{Y}{V}=\alpha +z^{-1}+z^{-2}$\par
+$P(z)=\frac{Y}{X}=\frac{\alpha +z^{-1}+z^{-2}}{1-\beta z^{-2}}$\par
+(ii)\par
+$P(z)=\frac{Y}{X}=\frac{(1-\frac{1}{2} z^{-1})(\alpha-2z^{-1})}{(1-\frac{1}{2} z^{-1})(1+\frac{1}{2} z^{-1})}$\par
+$P(z)=\frac{Y}{X}=\frac{(1+\frac{1}{2} z^{-1})(\alpha+2z^{-1})}{(1-\frac{1}{2} z^{-1})(1+\frac{1}{2} z^{-1})}$\par
+$\alpha=-2 \quad {\rm or} \quad \alpha=-6$\par
+(iii)\par
+$P(z)=2+z^{-1}+z^{-2}$\par
+$Q(z)=z^{-2}P(z^{-1})=1+z^{-1}+2z^{-2}$\par
+$H(z)=P(z)Q(z)$\par
+$H(\omega)=e^{-j2\omega}(6+6cos\omega+4cos2\omega)$\par
+$e^{-j2\omega}$ is the phase of $H(\omega)$\par
+\subsubsection*{(b)}
+(i)\par
+$V_{1}(z)=V(z^4)$\par
+$V_{2}(z)=V_{1}(z)R(z)$\par
+$V_{3}(z)=z^{-1}V_{2}(z)$\par
+$W(z)=\frac{1}{4}\sum_{k=0}^{3}V_{3}(e^{-j2\pi \frac{k}{4}}z^{\frac{1}{4}})$\par
+$H(z)=\frac{W(z)}{V(z)}$\par
+Due to downsampling operation, this system is not time-invariant.\par
+(ii)\par
+???
+\subsection*{3.}
+\subsubsection*{(a)}
+(i)\par
+(ii)\par
+(iii)\par
+\subsubsection*{(b)}
+(i)\par
+(ii)\par
+
+\subsection*{4.}
+\subsubsection*{(a)}
+(i)\par
+(ii)\par
+\subsubsection*{(b)}
+(i)\par
+$H_{1}(z)=1-z^{-2}$\par
+$\Gamma_{h_{1}h_{1}}(f)=H_{1}(z)H_{1}(z^{-1})|_{z=e^{j2\pi f}}=2-z^{2}-z^{-2}$\par
+$\Gamma_{ww}(f)=\sigma_{w}^2$\par
+$\Gamma_{xx}(f)=\Gamma_{h_{1}h_{1}}(f)\Gamma_{ww}(f)=\sigma_{w}^2(2-z^{2}-z^{-2})$\par
+$H_{2}(z)=\frac{1}{1+0.81z^{-2}}$\par
+$\Gamma_{h_{2}h_{2}}(f)=H_{2}(z)H_{2}(z^{-1})|_{z=e^{j2\pi f}}=\frac{1}{1.6561+0.81z^{2}+0.81z^{-2}}$\par
+$\Gamma_{yy}(f)=\Gamma_{h_{2}h_{2}}(f)\Gamma_{ww}(f)=\frac{\sigma_{w}^2}{1.6561+0.81z^{2}+0.81z^{-2}}$\par
+(ii)\par
+(iii)\par
+$\Gamma_{yy}(f)=\frac{\sigma_{w}^2}{1.6561+0.81z^{2}+0.81z^{-2}}=\sigma_{w}^2\frac{z^{2}}{0.81z^{4}+1.6561z^{2}+0.81}$\par
+
+\subsection*{5.}
+\subsubsection*{(a)}
+$A_{2}(z)=1+2z^{-1}+\frac{1}{3}z^{-2}$\par
+$K_{2}=\frac{1}{3}$\par
+$B_{2}(z)=\frac{1}{3}+2z^{-1}+z^{-2}$\par
+$A_{1}(z)=\frac{A_{2}(z)-K_{2}B_{2}(z)}{1-K_{2}^{2}}=1+\frac{3}{2}z^{-1}$\par
+$K_{1}=\frac{3}{2}$\par
+\subsubsection*{(b)}
+$H_{sv}(z)=\frac{1}{1-0.8z^{-1}}$\par
+$\Gamma_{ss}(\omega)=\sigma_{v}^{2}H_{sv}(\omega)H_{sv}(-\omega)$\par
+12.14
+\clearpage
+
+\end{document}
