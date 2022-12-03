@@ -5,6 +5,7 @@ The language used in this repository will be English and Chinese, and the unders
 I may introcude many textbooks and they may not always be needed. You do not have to read all of them, but I still recommend you to at least just scan them briefly. Same thing will be taught and explained differently in different books. All the books mentioned in this repository can be found in zlibrary.
   
 关于NTU EEE学院 信号处理项目课程的一些具体内容，不都对，关于课程内容的理解主要以中文书写  
+放假了不想费劲写英文了，剩下的更新全部用中文，开摆  
 
 
 ## EE6204 System Analysis  
@@ -17,7 +18,9 @@ This book has Chinese translated edition. This book is mostly recommended. It is
 
 
 ## EE6401 Adavanced Digital Signal Processing
-Classic Digital Signal Processing course. It has some connection with EE6204 in terms of DFT.
+主要内容：多速率数字信号处理、线性预测和最优线性滤波器和功率谱估计，就是教材上的三章内容，不像别的课一样，教学内容分散在各种书的各种地方，教学内容集中，比较方便看，但是因为这一块属于数字信号处理的冷门内容，网上的教学视频和其他教学材料又比较少，没有太多的材料可供自学  
+这门课比较难，不推荐选，最好本科学过数字信号处理，但是没学过问题也不大  
+考核方式：作业+测验+期末考试，作业很难，比考试还难，考试也很难。需要背诵的内容适中
 ### Textbooks 
 #### Digital Signal Processing: Pearson New International Edition, 4th edition, Proakis
 This book is the only textbook used by the lecturer, and I would like to remind you that It has a solution manual.
@@ -29,7 +32,9 @@ This book has same or more reputation than the former book, and it is also a gre
 
 
 ## EE6427 Video Signal Processing
-This course is a little bit complicated as it does not follow any of the textbooks below. It synthesizes many short parts of the textbooks.
+This course is a little bit complicated as it does not follow any of the textbooks below. It synthesizes many short parts of the textbooks.  
+课程内容多且杂，由于2022年换老师了，所以考试没什么往年题可以参考  
+考核方式：作业+测验+考试。作业很简单，只需要文字论述方案，不需要写代码。测验和考试单纯难度不高，但是需要把很长很长很长的PPT都理解，背诵量大。
 ### Textbooks 
 #### Digital Image Processing, 4th edition, Gonzalez
 This book has Chinese translated edition. This book is mostly recommended. It is a classic textbook in China, so you may be familiar with it. This book includes many theortical things and formulas.
@@ -46,4 +51,4 @@ This book is better than the former two books. In terms of encoding of JPEG, it 
 
 
 ## EE7401 Probability & Random Processes
-This course is about propbability theory with measure thoery. Measure theory is another hard math thory, so I recommend 
+
