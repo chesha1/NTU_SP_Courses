@@ -1,0 +1,369 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\linespread{1.5}
+\title{Probability and Random Process Exams}
+\author{CHEN SHANG }
+\date{Nov 2022}
+
+\begin{document}
+
+\maketitle
+{\Huge
+Personal answers.\par
+May not always be right.\par}
+\section*{2018-2019}
+\subsection*{1.}
+\subsubsection*{(a)}
+$p_{Y|X}(y|x)=f_{Z}(\frac{1}{2}y-3x|x)$\par
+$p_{Y|X}(y|1)=f_{Z}(\frac{1}{2}y-3)=\frac{1}{\sqrt{2\pi}}e^{-\frac{1}{8}y^{2}+\frac{3}{2}y-\frac{9}{2}}$\par
+$p_{Y|X}(y|0)=f_{Z}(\frac{1}{2}y)=\frac{1}{\sqrt{2\pi}}e^{-\frac{1}{8}y^{2}}$\par
+\subsubsection*{(b)}
+$p_{X|Y}(x|y)=\frac{f_{Y|X}(y|x)}{\sum_{x'}p_{X}(x')f_{Y|X}(y|x')}p_{X}(x)$\par
+$p_{X}(0)=1-p, \ p_{X}(1)=p$\par
+$p_{X|Y}(1|y)=\frac{f_{Y|X}(y|1)}{p_{X}(0)f_{Y|X}(y|0)+p_{X}(1)f_{Y|X}(y|1)}p_{X}(1)=\frac{pe^{\frac{3}{2}y-\frac{9}{2}}}{1-p+pe^{\frac{3}{2}y-\frac{9}{2}}}$\par
+$p_{X|Y}(0|y)=\frac{f_{Y|X}(y|0)}{p_{X}(0)f_{Y|X}(y|0)+p_{X}(1)f_{Y|X}(y|1)}p_{X}(0)=\frac{1-p}{1-p+pe^{\frac{3}{2}y-\frac{9}{2}}}$\par
+$X=\begin{cases}
+0 \ &y<\frac{2}{3}{\rm ln}(1-p)-\frac{2}{3}{\rm ln}p+3\\
+1 \ &{\rm otherwise}
+\end{cases}$
+
+\subsection*{2.}
+\subsubsection*{(a)}
+$f_{Y}(y)=\int_{0}^{3}f_{Y|X}(y|x)f_{X}(x)dx\\
+=\frac{c}{3}\int_{0}^{3}xe^{-xy}dx\\
+=-\frac{c}{3y}\int_{0}^{3}xd(e^{-xy})\\
+=-\frac{c}{3y}(xe^{-xy}\mid_{0}^{3}-\int_{0}^{3}e^{-xy}dx)\\
+=\begin{cases}
+\frac{c}{3y^{2}}[1-e^{-3y}(3y + 1)] \ &y \geq 0\\
+0 \ &{\rm otherwise}
+\end{cases}$\par
+$\int_{0}^{+\infty}f_{Y}(y)dy=c=1$
+\subsubsection*{(b)}
+$f_{X|Y}(x|y)=\frac{f_{Y|X}(y|x)}{f_{Y}(y)}f_{X}(x)$\par
+$f_{X|Y}(x|\frac{1}{3})=\frac{f_{Y|X}(\frac{1}{3}|x)}{f_{Y}(\frac{1}{3})}f_{X}(x)=\begin{cases}
+\frac{xe^{-\frac{1}{3}x}}{9(1-2e^{-1})} \ & 0 \leq x \leq 3\\
+0 \ & {\rm otherwise}
+\end{cases}$\par\indent
+\par
+$\hat{x}=E(X|Y=\frac{1}{3})=\int_{0}^{3}xf_{X|Y}(x|\frac{1}{3})dx=\frac{6-15e^{-1}}{1-2e^{-1}}$
+\subsection*{3.}
+\subsubsection*{(a)}
+(i)\par
+$40=20+20$\par
+$p=\frac{1}{C_{10}^{2}}=\frac{1}{45}$\par
+(ii)\par
+$p=\frac{1+C_{3}^{2}+C_{4}^{2}}{C_{10}^{2}}=\frac{2}{9}$
+\subsubsection*{(b)}
+(i)\par
+$\eta_{x}(t)=\frac{1}{2}g(t)+\frac{1}{2}(-g(t))=0$\par
+(ii)\par
+$R(t_{1},t_{2})=E(x(t_{1})x^{*}(t_{2}))=\frac{1}{2}g(t_{1})g^{*}(t_{2})+\frac{1}{2}(-g(t_{1}))(-g^{*}(t_{2}))$\par
+$R(t_{1},t_{2})=g(t_{1})g^{*}(t_{2})$\par
+No.
+\subsubsection*{(c)}
+$R_{ss}(t_{1},t_{2})=E(s(t_{1})s^{*}(t_{2}))=\alpha^{2}E(e^{jp_{1}(t_{1}-t_{2})})E(e^{jp_{2}(t_{1}^{2}-t_{2}^{2})})$
+\subsection*{4.}
+\subsubsection*{(a)}
+\subsubsection*{(b)}
+
+\subsection*{5.}
+\subsubsection*{(a)}
+(i)\par
+State 0: at the home\par
+State 1: at the office\par\indent
+\par
+$P=\begin{bmatrix}
+0.2 &0.8 \\
+0.4 &0.6 
+\end{bmatrix}$\par\indent
+\par
+(ii)\par\indent
+\par
+$\begin{cases}
+Y=YP\\
+p_{home}+p_{office}=1
+\end{cases}$\par\indent
+\par
+$p_{office}=\frac{2}{3}$\par\indent
+\par
+(iii)\par\indent
+\par
+$P=\begin{bmatrix}
+0.2 &0.8 \\
+0.4+a &0.6-a 
+\end{bmatrix}$\par\indent
+\par
+$\begin{cases}
+Y=YP\\
+p_{home}+p_{office}=1
+\end{cases}$\par\indent
+\par
+$p_{office}=\frac{0.8}{1.2+a}$\par
+No.
+\subsubsection*{(b)}
+
+\clearpage
+
+\section*{2019-2020}
+\subsection*{1.}
+\subsubsection*{(a)}
+$\int _{-\infty }^{+\infty }\int _{-\infty }^{+\infty }f(x,y)dydx=1$\par
+$\int _{0}^{1}\int _{0}^{1-x}cxy \ dydx=1$\par
+$c=24$\par
+$f_{Y}(y)=\int _{-\infty }^{+\infty }f(x,y)dx=\int _{0}^{1-y}24xy \ dx=\begin{cases}
+12y(1-y)^{2} \ &0 \leq y \leq 1\\
+0 \ &{\rm otherwise}
+\end{cases}$
+\subsubsection*{(b)}
+$f_{X|Y}(x|y)=\frac{f(x,y)}{f_{Y}(y)}=\begin{cases}
+\frac{2x}{(1-y)^{2}} \ &x\geq 0, \ y \geq 0, \ x+y \leq 1\\
+0 \ &{\rm otherwise}
+\end{cases}$
+\subsubsection*{(c)}
+$\hat{x}={\rm E}(X|Y=y)=\int_{0}^{1-y}xf_{X|Y}(x|y)dx=\frac{2}{3}(1-y)$
+\subsubsection*{(d)}
+${\rm E}(X^{2}|Y=y)=\int_{0}^{1-y}x^{2}f_{X|Y}(x|y)dx=\frac{1}{2}(1-y)^{2}$\par
+${\rm Var}(X|Y=y)={\rm E}(X^{2}|Y=y)-{\rm E}^{2}(X|Y=y)=\frac{1}{18}(1-y)^{2}$\par
+${\rm MSE}={\rm E}({\rm Var}(X|Y=y))=\int_{0}^{1}\frac{1}{18}y(1-y)^{2}dy=\frac{1}{216}$
+
+\subsection*{2.}
+\subsubsection*{(a)}
+$p_{X,Y}(x,y)$
+\subsubsection*{(b)}
+$p_{X,Y}(x,3)$
+\subsubsection*{(c)}
+$0.08+0.08+0.24=p_{Y}(3)$\par
+$\frac{p_{X,Y}(x,3)}{p_{Y}(3)}=p_{X|Y}(x|3)$
+\subsubsection*{(d)}
+$p_{Y|X}(3|4), \ p_{Y|X}(3|5), \ p_{Y|X}(3|6)$
+\subsection*{3.}
+\subsubsection*{(a)}
+(i)\par
+$P(A)=\frac{9}{90}=\frac{1}{10}$\par
+$P(B)=\frac{10}{90}=\frac{1}{9}$\par
+(ii)\par
+$P(C)=P(A)+P(B)-P(AB)=\frac{1}{5}$\par
+\subsubsection*{(b)}
+(i)\par
+$\eta_{y}[n]=E(x[n])-E(x[n-3])=0$\par
+(ii)\par
+$E(y^{2}[n])=E(x^{2}[n]-2x[n]x[n-3]+x^{2}[n-3])=R_{xx}[0]-2R_{xx}[3]+R_{xx}[0]$\par
+$E(y^{2}[n])=2-2e^{-1.5}+2=4-2e^{-1.5}$\par
+(iii)\par
+$R_{yy}[m]=E(y[n]y[n+m])=
+\begin{cases}
+2R_{xx}[0]-R_{xx}[m-3]-R_{xx}[m+3] \\
+to do \ Week 11  \ 2:05:47
+\end{cases}$\par
+$c=2-e^{1.5}-e^{-1.5}$
+\subsection*{4.}
+\subsubsection*{(a)}
+\subsubsection*{(b)}
+
+\subsection*{5.}
+\subsubsection*{(a)}
+(i)\par
+$\eta_{Z}(t)=\sum_{i=1}^{n} b_{i}y_{i}(t)=\sum_{i=1}^{n} 0=0$\par
+$R_{yy}(t_{1},t_{2})=C_{yy}(t_{1},t_{2})+\eta(t_{1})\eta^{*}(t_{2})=0, \ t_{1}\neq t_{2}$\par
+$R_{zz}(\tau)=\sum_{i=1}^{n}\sum_{j=1}^{n} b_{i}b_{j} E(y_{i}(t)y_{j}(t+\tau))=\sum_{i=1}^{n}b_{i}^{2}e^{-a_{i}|\tau|}$\par
+WSS.\par
+(ii)\par
+$C_{zz}(\tau)=R_{zz}(\tau)=\sum_{i=1}^{n}b_{i}^{2}e^{-a_{i}|\tau|}$\par
+$\frac{1}{T}\int_{0}^{T}C_{zz}(\tau)d\tau=\frac{1}{T}\sum_{i=1}^{n}b_{i}^{2}\frac{1-e^{-a_{i}T}}{a_{i}} \rightarrow 0$\par
+(iii)\par
+???
+\subsubsection*{(b)}
+
+\clearpage
+\section*{2020-2021}
+\subsection*{1.}
+\subsubsection*{(a)}
+$\int ^{10}_{0}a\left( 1-0.1x\right) dx=1$\par
+$a=0.2$\par
+$F_{X}(x)=\begin{cases}
+0 &x<0\\
+0.2x-0.01x^{2} &0 \leq x \leq 10\\
+1 &x>10
+\end{cases}$\par
+$y=F_{X}(x)$\par
+$y_{1}=0.0591, \ y_{2}=0.19, \ y_{3}=0.4375, \ y_{4}=0.6975, \ y_{5}=0.91$
+\subsubsection*{(b)}
+$\int ^{10}_{0}bzdz=1$\par
+$b=0.02$\par
+$F_{Z}(z)=\begin{cases}
+0 &z<0\\
+0.01z^{2} &0 \leq z \leq 10\\
+1 &z>10
+\end{cases}$\par
+$z=10\sqrt{F_{X}(x)}$\par
+
+
+
+\subsection*{2.}
+\subsubsection*{(a)}
+$\int_{0}^{4}b_{1}ydy=1, \ b_{1}=\frac{1}{8}$\par
+$\int_{0}^{4}b_{2}(4-y)dy=1, \ b_{2}=\frac{1}{8}$\par
+$f_{Y}(y)=f_{Y|X}(y|0)f_{X}(0)+f_{Y|X}(y|2)f_{X}(2)=\begin{cases}
+\frac{3}{10}-\frac{1}{40}y \ &0\leq y \leq 4\\
+0 \ &{\rm otherwise}
+\end{cases}$\par
+$f_{X|Y}(0|2.5)=\frac{f_{Y|X}(2.5|0)f_{X}(0)}{f_{Y}(2.5)}=0.5263$\par
+$f_{X|Y}(2|2.5)=\frac{f_{Y|X}(2.5|2)f_{X}(2)}{f_{Y}(2.5)}=0.4737$\par
+$\hat{x}=0$
+\subsubsection*{(b)}
+${\rm E}(x|y)=\sum 0 \cdot f_{X|Y}(0|2.5)+2 \cdot f_{X|Y}(2|2.5)=0.9474$\par
+\subsection*{3.}
+\subsubsection*{(a)}
+$\eta_{y}(t)=\int_{0}^{10}e^{\mathbf{x}t}\frac{1}{10}dx=\frac{{e}^{10\,t}-1}{10\,t}$
+\subsubsection*{(b)}
+$\mathbf{y}=e^{\mathbf{x}t}, \ \mathbf{x}=\frac{{\rm ln}y}{t}$\par
+$\frac{{\rm d}\mathbf{y}}{{\rm d}\mathbf{x}}=te^{\mathbf{x}t}=t\mathbf{y}$\par
+$f_{Y}(y,t)=\frac{1}{yt}f_{X}(\frac{{\rm ln}y}{t})U(y)=\begin{cases}
+\frac{1}{10yt} \ & 1 \leq y \leq e^{10t}\\
+0 \ & {\rm otherwise}
+\end{cases}$
+\subsubsection*{(c)}
+$R_{yy}(t_{1},t_{2})=E(e^{xt_{1}}e^{xt_{2}})=E(e^{x(t_{1}+t_{2})})=E(y(t_{1}+t_{2}))=\eta_{y}(t_{1}+t_{2})$
+\subsubsection*{(d)}
+$R_{yy}(t_{1},t_{2})=\eta_{y}(t_{1}+t_{2})=\frac{{e}^{10(t_{1}+t_{2})}-1}{10(t_{1}+t_{2})}$
+
+\subsection*{4.}
+\subsubsection*{(a)}
+(i)\par
+$S_{xx}(\omega)=\sum_{m=-1}^{1}R_{xx}[m]e^{-j\omega m}=e^{j\omega}+2+e^{-j\omega}=2+2cos\omega$\par
+$\mathbf{S}_{xx}(z)=\sum_{m=-1}^{1}R_{xx}[m]z^{-m}=z+2+z^{-1}$\par
+(ii)\par
+$R_{yy}[m]=E(x[n]x[n+m])=5R_{xx}[m]-2R_{xx}[m+1]-2R_{xx}[m-1]$\par
+$R_{yy}[m]=\begin{cases}
+6 \ &m=0\\
+1 \ &m=1,-1\\
+-2 \ &m=2,-2\\
+0 \ &{\rm otherwise}
+\end{cases}$\par\indent
+\par
+(iii)\par
+$S_{yy}(\omega)=-2e^{j2\omega}+e^{j\omega}+6+e^{-j\omega}-2e^{-j2\omega}=6+2cos\omega-4cos2\omega$\par
+$\mathbf{S}_{yy}(z)=-2z^{2}+z+6+z^{-1}-2z^{-2}$\par
+
+\subsubsection*{(b)}
+(i)\par
+State 0:negative\par
+State 1:asymptomatic\par
+State 2:symptomatic\par
+
+$\Pi=\begin{bmatrix}
+1-p-q & p &q\\
+3p & 1-3p & 0\\
+5q & 1-5q & 0
+\end{bmatrix}$\par
+(ii)\par
+$P(\Pi-I)=0, \ p_{0}+p_{1}+p_{2}=1$\par
+$p_{0}=\frac{15}{23}, \ p_{1}=\frac{5}{23}, \ p_{2}=\frac{3}{23}$\par
+$35000 \times \frac{3}{23}=4562$\par
+(iii)\par
+$N \geq 6.25$
+
+\clearpage
+\section*{2021-2022}
+\subsection*{1.}
+\subsubsection*{(a)}
+$p_{Y|X}(y|x):$\par
+$a+0.2+0.3=1, \ a=0.5$\par
+$b+0.1+0.2=1, \ b=0.7$\par
+$c+0.5+0.4=1, \ c=0.1$\par
+$p_{X|Y}(x|y):$\par
+$a+0.1+0.5=1, \ a=0.4$\par
+$b+0.2+0.4=1, \ b=0.4$\par
+$c+0.3+0.2=1, \ c=0.5$\par
+$p_{X,Y}(x,y):$\par
+???
+\subsubsection*{(b)}
+$d+0.3+0.4=1, \ d=0.3$\par
+Table 1 can't be PMF of $p_{X,Y}(x,y)$, as sum of all values are great than 1.\par
+If Table 1 is PMF of $p_{X|Y}(x|y)$:\par
+$p_{X}(X=4)=0.4\times 0.3+0.1\times0.4+0.5\times0.3=0.31$\par 
+$p_{X}(X=5)=0.2\times 0.3+0.4\times0.4+0.4\times0.3=0.34$\par 
+$p_{X}(X=6)=0.3\times 0.3+0.2\times0.4+0.5\times0.3=0.32$\par 
+$p_{X}(X=4)+p_{X}(X=5)+p_{X}(X=6)\neq1$\par
+So Table 1 is not PMF of $p_{X|Y}(x|y)$.\par
+Therefore, Table 1 is PMF of $p_{Y|X}(y|x)$.
+\subsubsection*{(c)}
+$\begin{cases}
+0.5p_{X}(4)+0.1p_{X}(5)+0.5p_{X}(6)=0.3\\
+0.2p_{X}(4)+0.7p_{X}(5)+0.4p_{X}(6)=0.4\\
+0.3p_{X}(4)+0.2p_{X}(5)+0.1p_{X}(6)=0.3
+\end{cases}$\par\indent
+\par
+$\begin{cases}
+p_{X}(4)=0.75\\
+p_{X}(5)=0.5\\
+p_{X}(6)=-0.25
+\end{cases}$\par
+???
+
+\subsection*{2.}
+\subsubsection*{(a)}
+$f_{Y}(y)=\int_{0}^{+ \infty}f_{X,Y}(x,y)dx=\lambda y$\par
+$f_{X|Y}(x|y)=\frac{f_{X,Y}(x,y)}{f_{Y}(y)}=\begin{cases}
+ye^{-xy} \ & x\geq 0, \ 1 \leq y \leq 5\\
+0 \ & {\rm otherwise}
+\end{cases}$\par
+${\rm E}(X|Y)=\int_{0}^{+ \infty}xf_{X|Y}(x|y)dx=\frac{1}{y}$\par
+${\rm E}(X^{2}|Y)=\int_{0}^{+ \infty}x^{2}f_{X|Y}(x|y)dx=\frac{2}{y^{2}}$\par
+${\rm MMSE}={\rm Var}(X|Y)={\rm E}(X^{2}|Y)-{\rm E}^{2}(X|Y)=\frac{1}{y^{2}}$\par
+$\hat{x}={\rm E}(X|Y=2)=\frac{1}{2}$\par
+\subsubsection*{(b)}
+$\int_{1}^{5}f_{Y}(y)=12\lambda=1, \ \lambda=\frac{1}{12}$\par
+$\hat{y}=E(Y)=\int_{1}^{5}y\cdot\frac{1}{12}ydy=\frac{31}{9}$\par
+$E(Y^2)=\int_{1}^{5}y^2\cdot\frac{1}{12}ydy=13$\par
+${\rm MSE}={\rm Var}(Y)=E(Y^2)-E^2(Y)=1.1358$
+\subsection*{3.}
+\subsubsection*{(a)}
+(i)\par
+$p=(1-p)^{m-1}p$\par
+(ii)\par
+$p=\sum_{m=1}^{n-1} [(1-p)^{m-1}p] [(1-p)^{n-m-1}p]=(n-1)(1-p)^{n-2}p^2$
+\subsubsection*{(b)}
+(i)\par
+$E(\mathbf{y}(t))=\mu +2$\par
+(ii)\par
+$R_{yy}(\tau)=E(\mathbf{y}(t)\mathbf{y}(t+\tau))=E[(\mathbf{x}(t)+2)(\mathbf{x}(t+\tau)+2)]$\par
+$R_{yy}(\tau)=E[\mathbf{x}(t)\mathbf{x}(t+\tau)+2\mathbf{x}(t)+2\mathbf{x}(t+\tau)+4]=e^{-|\tau|}+4\mu+4$\par
+(iii)\par
+$\mu=-1$
+\subsection*{4.}
+\subsubsection*{(a)}
+(i)\par
+$E(\mathbf{x}(t))=\int_{0}^{3}\frac{1}{3}\mathbf{x}(\tau)d\tau=\begin{cases}
+\frac{7000000000}{3}t \ & 0<t<3\\
+0 \ & t \leq 0\\
+7000000000 \ & t \geq 3
+\end{cases}$\par
+(ii)\par
+$E(a[\mathbf{x}(t)]^b)=a\int_{0}^{3}\frac{1}{3}\mathbf{x}^b(\tau)d\tau=\begin{cases}
+a\frac{7000000000^b}{3}t \ & 0<t<3\\
+0 \ & t \leq 0\\
+a7000000000^b \ & t \geq 3
+\end{cases}$\par
+\subsubsection*{(b)}
+
+\subsection*{5.}
+\subsubsection*{(a)}
+(i)\par
+$\Pi=\begin{bmatrix}
+0.6+0.4e^{-\tau} & 0.4-0.4e^{-\tau}\\
+0.4-0.6e^{-\tau} & 0.6+0.6e^{-\tau}
+\end{bmatrix}$\par
+(ii)\par
+$\Pi'(0^{+})=\begin{bmatrix}
+-0.4 & 0.4\\
+0.6 & -0.6
+\end{bmatrix}$\par
+(iii)\par
+$P(0.693)=P(0)\Pi(0.693)=\begin{bmatrix}
+0.8 & 0.2
+\end{bmatrix}$
+\subsubsection*{(b)}
+
+\end{document}
