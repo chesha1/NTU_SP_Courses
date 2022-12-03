@@ -51,4 +51,9 @@ This book is better than the former two books. In terms of encoding of JPEG, it 
 
 
 ## EE7401 Probability & Random Processes
-
+这门课和EE6204 EE6401都涉及随机过程，但是侧重点都不同，相互之间可以算有点配合，课本身的难度不高
+考核方式：2次作业+考试，作业难度一般，考试难度一般
+概率论部分看PPT就行了，不用看书，PPT上有的内容根本不考，每年题型都很固定，但是会有小变化，比如往年考普通MMSE，今年考Linear MMSE
+### Textbooks
+#### Probability, Random Variables and Stochastic Processes
+老师用的教材，抽了几章中的部分内容出来讲，有中文版和习题解答
