@@ -1,0 +1,319 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{arydshln}
+\usepackage{caption}
+\usepackage{ulem}
+\usepackage{xcolor, soul}
+\usepackage{datetime}
+\linespread{1.5}
+\title{Real-Time DSP Design \& Applications Exams}
+\author{CHEN SHANG }
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+\large
+
+\section*{2019 - 2020}
+\subsection*{1.}
+\subsubsection*{(a)}
+(i)\par
+$8$\par
+$23$\par\indent
+\par
+(ii)\par
+dynamic range $=20 \ {\rm log}_{10} \frac{(-1)^{0} \times 2^{254-127} \times (2-2^{-23})}{(-1)^{0} \times 2^{1-127} \times 1}=1529.232$\par\indent
+\par
+(iii)\par
+$(-1)^{0} \times 2^{133-127} \times 1.5625=100$\par\indent
+\par
+(iv)\par
+$(-1)^{0} \times 2^{133-127} \times 1.5625+(-1)^{0} \times 2^{131-127} \times 1.25$\par
+$=(-1)^{0} \times 2^{6} \times 1.5625+(-1)^{0} \times 2^{4} \times 1.25$\par
+$=(-1)^{0} \times 2^{6} \times 1.875$\par
+$0 \ | \ (133)_{10} \ | \ (0.875)_{10}$
+
+
+\subsubsection*{(b)}
+(i)\par
+in Part 1 P90\par
+$\eta_{\rm total}=H(e^{j0})\eta_{x}+\eta_{0}+\eta_{1}+...+\eta_{99}+\eta_{y}=-1.5625Q$\par
+rounding $=> \ \eta_{x}=0, \ \eta_{y}=0$\par
+$\eta_{i}=-\dfrac{\frac{Q}{2^5}}{2}$\par\indent
+\par
+(ii)\par
+$\sigma_{\rm total}^{2}=||H(e^{j\omega})||_{2}^{2}\sigma_{x}^{2}+\sigma_{0}^{2}+\sigma_{1}^{2}+...+\sigma_{99}^{2}+\sigma_{y}^{2}=0.133Q^2$\par
+$\sigma_{x}^{2}=\sigma_{y}^{2}=\frac{Q^2}{12}$\par
+$||H(e^{j\omega})||_{2}^{2}=\frac{1}{2}$\par
+$\sigma_{i}^{2}=\dfrac{(\frac{Q}{2^5})^{2}}{12}$\par\indent
+\par
+(iii)\par
+$Q=2^{-4}$\par
+$\eta_{\rm total}=-0.0977, \ \sigma_{\rm total}^{2}=0.00052$\par\indent
+\par
+(iv)\par
+remains same
+
+\subsection*{2.}
+\subsubsection*{(a)}
+(i)\par
+end of Part 2\par
+number of utilized stages = 2\par
+maximum throughput $\leq \frac{1}{2}$\par\indent
+\par
+(ii)\par
+forbidden set $= (0, 1, 3)$\par
+scheduling strategy $=0,2,4,6...$\par\indent
+\par
+(iii)\par
+latency = 4\par
+Average initiation = 2 clocks/sample\par
+Average throughput = $\frac{1}{2}$
+
+\subsection*{3.}
+\subsubsection*{(a)}
+(i)\par
+loop bound $= \frac{3+0+10}{1}=13$\par\indent
+\par
+(ii)\par
+critical path = 14\par\indent
+\par
+(iii)\par
+critical path = 13
+
+
+\subsection*{5.}
+\subsubsection*{(a)}
+in Part 5 P5\par
+$L=32, \ B=128$\par
+Processing time $T_{p}=[5+128 \times (5+32)] \ {\rm clock \ cycles} \times 10 \ {\rm ns}=47410 \ {\rm ns}$\par
+$T_{p} \leq BT_{s}$\par
+$T_{s} \geq 370.4 \ {\rm ns}$\par
+$f_{s} \leq 2.699 \ {\rm MHz}$
+
+
+
+\clearpage
+
+
+
+
+
+\section*{2020 - 2021}
+\subsection*{1.}
+\subsubsection*{(a)}
+(i)\par
+$-5.25$\par\indent
+\par
+(ii)\par
+$(3)_{10}=(0011.000)_{2'}$\par
+sum $=11101.110$\par
+No overflow\par\indent
+\par
+(iii)\par
+$-5.25-3=-8.25<-8$\par
+There is overflow\par\indent
+\par
+(iv)\par
+$a=1111010.11000$
+
+\subsubsection*{(b)}
+(i)\par
+${\rm SQNR} = 10 \ {\rm log} (\dfrac{3 \ \sigma_{x}^{2} \ 2^{2n}}{V_{max}^{2}}) \geq 40$\par
+$n=8$\par\indent
+\par
+(ii)\par
+${\rm SQNR} = 43.73 \ {\rm dB}$\par
+$Q=\frac{V_{\rm max}-V_{\rm min}}{2^{n}}=0.039 \ {\rm volts}$\par\indent
+\par
+(iii)\par
+$V_{\rm max}=3$\par
+$\frac{3}{Q}=76.8$\par
+For mid-rise quantizer, $nQ \sim (n+1)Q => (n+0.5)Q$\par
+$76.5Q=2.988 \ {\rm volts}$
+
+
+\subsection*{2.}
+\subsubsection*{(a)}
+(i)\par
+$f_{\rm max}=700 \ {\rm Hz}$\par
+$f_{s} \geq 2f_{\rm max}=1400 \ {\rm Hz}$\par\indent
+\par
+(ii)\par
+in Part  2 P23\par
+$f_{c}=600 \ {\rm Hz}, \ B=200\ {\rm Hz}$\par
+$\frac{2f_{c}+B}{m+1}=\frac{1400}{m+1}, \ \frac{2f_{c}-B}{m}=\frac{1000}{m}$\par
+No aliasing when $m=2$\par\indent
+\par
+(iii)\par
+$f_{s2}=\frac{1200}{n}$
+
+\subsubsection*{(b)}
+(ii)\par
+$4+6z^{-1}+10z^{-2}+15z^{-3}=(2+3z^{-1})(2+5z^{-2})$\par
+Critical path $2T_{M}+2T_{A}$, which is more than the earlier critical path $T_{M}+3T_{A}$ since typically $T_{M} > T_{A}$
+
+
+\subsection*{3.}
+\subsubsection*{(a)}
+(i)\par
+$a_{n}=b_{n}=1$\par\indent
+\par
+(ii)\par
+$a_{n}=1, \ b_{n}=0 \quad {\rm or} \quad a_{n}=0, \ b_{n}=1$\par\indent
+\par
+(iii)\par
+in Part 3
+
+\subsubsection*{(b)}
+in Part 5 P8\par
+Minimum MIPS rating $=\frac{3300 \times 4200 \times 3 \times 9}{10^{6}}=374.22 \ {\rm MIPS}$\par
+$\frac{500 \times 10^{6}}{3300 \times 4200 \times 3}=12.025 \ {\rm instructions/output pixel/color}$\par
+9 \ instructions/output pixel/color are required for filtering\par
+overhead $=12.025-9=3.025 \ {\rm instructions/output pixel/color}$
+
+\subsection*{4.}
+\subsubsection*{(a)}
+40 bits\par
+LO(ACx) = low bits, bits 15-0\par
+HI(ACx) = high bits, bits 31-16\par
+
+
+
+\subsection*{5.}
+\subsubsection*{(b)}
+(ii)\par
+$T_{s}=20 \ {\rm ns}$\par
+critical path $=31 \ {\rm ns}$\par
+Not adequate\par\indent
+\par
+(iii)\par
+$2 \times \frac{1}{31} > 50$\par
+minimum block size $=2$\par
+$f_{c}=\frac{f_{s}}{2}=25 \ {\rm MHz}$
+\clearpage
+
+
+
+
+
+\section*{2021 - 2022}
+\subsection*{1.}
+\subsubsection*{(a)}
+(i)\par
+0011.110\par
+0111.111\par
+1000.000\par\indent
+\par
+(ii)\par
+$3.75=1.875 \times 2=(-1)^{0} \times 2^{128-127} \times 1.875$\par
+S $=0$\par
+Exp $=128=1000 \ 0000$\par
+D $=0.875=111 \ 0000 \ 0000 \ 0000 \ 0000 \ 0000$\par
+Largest normalized number $=(-1)^{0} \times 2^{254-127} \times (2-2^{-23}) = 3.403 \times 10^{38}$\par
+
+\subsubsection*{(b)}
+(i)\par
+in Part 1 P84, 74\par
+$\eta_{v}=H(e^{j0})\eta_{e}=-\frac{Q}{2}$\par
+$\sigma_{v}^{2}=(\int_{-\pi}^{\pi}|H(e^{j\omega})|^{2}\frac{d\omega}{2\pi})\sigma_{e}^{2}=\frac{3}{4}\frac{Q^{2}}{12}=\frac{Q^{2}}{16}$\par\indent
+\par
+(ii)\par
+$\eta_{w}=G(e^{j0})\eta_{v}=0$\par
+$\sigma_{w}^{2}=(\int_{-\pi}^{\pi}|H(e^{j\omega})G(e^{j\omega})|^{2}\frac{d\omega}{2\pi})\sigma_{e}^{2}=\frac{1}{4}\frac{Q^{2}}{12}=\frac{Q^{2}}{48}$\par\indent
+\par
+(iii)\par
+in Part 1 P84, 74\par
+$S_{v}(e^{j\omega})=|H(e^{j\omega})|^{2}S_{e}(e^{j\omega})=\begin{cases}
+\frac{Q^2}{12} &0 \leq \omega \leq \frac{3\pi}{4}\\
+0 & \frac{3\pi}{4} \leq \omega \leq \pi
+\end{cases}$\par\indent
+\par
+$S_{w}(e^{j\omega})=|G(e^{j\omega})|^{2}S_{v}(e^{j\omega})=\begin{cases}
+\frac{Q^2}{12} &\frac{\pi}{2} \leq \omega \leq \frac{3\pi}{4}\\
+0 & {\rm otherwise}
+\end{cases}$
+
+
+\subsection*{2.}
+\subsubsection*{(a)}
+(i)\par
+${\rm SQNR} = 10 \ {\rm log} (\dfrac{3 \ \sigma_{x}^{2} \ 2^{2n}}{V_{max}^{2}}) = 6.02n+4.77+20 \ {\rm log} \frac{\sigma}{V_{\rm max}}$\par\indent
+\par
+$=6.02n-3.01 \geq 23$\par
+$n=5$\par\indent
+\par
+(ii)\par
+$\sigma_{e,new}^{2}=\frac{1}{2}\sigma_{e,old}^{2}$\par\indent
+\par
+${\rm SQNR} = 10 \ {\rm log} (\dfrac{\sigma_{x}^{2}}{\sigma_{e}^{2}}) = 6.02n+4.77+20 \ {\rm log} \frac{\sigma}{V_{\rm max}} $\par\indent
+\par
+$=6.02n-3.01+3.01 \geq 23$\par
+$n=4$
+
+
+
+
+\subsection*{3.}
+\subsubsection*{(a)}
+(ii)\par
+$s_{0}:3 \ {\rm ns}, \quad s_{1}:5 \ {\rm ns}, \quad s_{2}:7 \ {\rm ns}$\par
+$c_{0}:4 \ {\rm ns}, \quad c_{1}:6 \ {\rm ns}, \quad c_{2}:8 \ {\rm ns}$\par\indent
+\par
+(iii)\par
+No
+
+\subsubsection*{(b)}
+(i)\par
+critical path = 15\par\indent
+\par
+(iii)\par
+in Part 4\par
+critical path = 8\par
+latch = 1
+
+\subsection*{4.}
+\subsubsection*{(a)}
+(i)\par
+$T_{s}=\frac{1}{f_{c}}=100 \ {\rm ns}$\par
+$LT_{s} \geq T_{c}$\par
+$L=2$\par\indent
+\par
+(ii)\par
+$f_{s}=13.33 \ {\rm MHz}$
+
+
+\subsection*{5.}
+\subsubsection*{(a)}
+(i)\par
+in Part5 P35\par
+MOV AC0, AC1\par
+or MOV \#11, AC0\par
+or MOV *AR0, AC0\par\indent
+\par
+(ii)\par
+MOV XAR0, XAR1\par
+or MOV AC0, XAR1\par
+or MOV XAR0, AC0\par
+or MOV dbl(*XAR0), XAR1\par\indent
+\par
+(iii)\par
+MOV AR0, AR1\par
+and many other cases\par\indent
+\par
+(iv)\par
+Source bits are sign extended, e.g. MOV AR0, AC0. However, if source has 23 bits, then zero filled, e.g. MOV XAR0, AC0.
+
+\subsubsection*{(b)}
+XAR0 = 00\_0100h, \ XAR1 = 00\_0300h, \ XAR2 = 00\_0300h\par
+
+XAR0 = 00\_0100h, \ XAR1 = 00\_0301h, \ XAR2 = 00\_0200h\par
+
+XAR0 = 00\_0102h, \ XAR1 = 00\_0301h, \ XAR2 = 00\_0201h\par
+\end{document}

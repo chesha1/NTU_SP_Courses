@@ -1,3 +1,10 @@
+# Table of Contents
+- [NTU_SP_Courses](#ntu_sp_courses)
+  - [EE6204 System Analysis](#ee6204-system-analysis)
+  - [EE6401 Adavanced Digital Signal Processing](#ee6401-adavanced-digital-signal-processing)
+  - [EE6402 Real-time DSP Processing and Applications](#ee6402-real-time-dsp-processing-and-applications)
+  - [EE6427 Video Signal Processing](#ee6427-video-signal-processing)
+  - [EE7401 Probability & Random Processes](#ee7401-probability--random-processes)
 # NTU_SP_Courses
 Nanyang Technological University School of EEE Signal Processing Program  
 
@@ -40,6 +47,12 @@ This book actually has similar content with the former book, and more importantl
 #### Discrete-Time Signal Processing, 3rd edition, Alan V. Oppenheim
 This book has same or more reputation than the former book, and it is also a great book. You can choose either of them to read. This book also has solution manual and Chinese translated version.
 
+## EE6402 Real-time DSP Processing and Applications
+看PPT就行了  
+考核方式：两次作业，难度简单。期末考试难度一般，需要的背诵量一般  
+### Textbooks
+#### VLSI Digital Signal Processing Systems: Design and Implementation
+在讲Part 4的时候，如果觉得不够，可以看一下这本书，虽然我觉得看PPT和课程视频完全够用了
 
 
 ## EE6427 Video Signal Processing
