@@ -1,0 +1,234 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{longdivision}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{arydshln}
+\usepackage{caption}
+\usepackage{ulem}
+\usepackage{xcolor, soul}
+\usepackage{datetime}
+\linespread{1.5}
+\title{Distributed Multimedia Systems Exams}
+\author{CHEN SHANG }
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+\large
+
+
+\section*{2018 - 2019}
+\subsection*{1.}
+\subsubsection*{(a)}
+$\mathbf{A}\mathbf{A}^{\rm T}=\begin{bmatrix}
+35 &17 \\
+17  &9
+\end{bmatrix}$\par\indent
+\par
+$\lambda=22\pm \sqrt{458}$\par
+$\sigma_{i}=\sqrt{\lambda_{i}}$\par\indent
+\par
+$\mathbf{\Sigma}=\begin{bmatrix}
+6.588 &0 &0 \\
+0  &0.774 &0
+\end{bmatrix}$
+
+\subsubsection*{(b)}
+$\mathbf{A}\mathbf{A}^{\rm T}=\begin{bmatrix}
+35 &17 \\
+17  &9
+\end{bmatrix}$\par\indent
+\par
+$\lambda_{1}=43.401, \ v_{1}=[ \ 0.897 \quad 0.443 \ ]^{\rm T}$\par
+$\lambda_{2}=0.599, \ v_{2}=[ \ -0.443 \quad 0.897 \ ]^{\rm T}$\par\indent
+\par
+$U=\begin{bmatrix}
+0.897 &-0.443 \\
+0.443  &0.897
+\end{bmatrix}$
+\subsubsection*{(c)}
+Yes, $\sigma_{1} \gg \sigma_{2}$
+\subsubsection*{(d)}
+$B=U \Sigma V^{\rm T}$\par\indent
+\par
+$=\begin{bmatrix}
+-0.589 &-0.694 &-0.414 &0\\
+-0.507 &-0.023 &0.759  &0.408\\
+-0.466 &0.312  &0.138 &-0.816\\
+-0.425  &0.648 &-0.483  &0.408
+\end{bmatrix}
+\begin{bmatrix}
+48.351  &0     &0\\
+0  &13.68     &0\\
+0  &0     &0\\
+0  &0     &0
+\end{bmatrix}
+\begin{bmatrix}
+-0.821 &-0.411 &-0.396\\
+0.355  &0.177 &-0.918\\
+-0.447  &0.894  &0
+\end{bmatrix}$\par\indent
+\par
+rank 1:\par\indent
+\par
+$\hat{B}=\sigma_{1}u_{1}v_{1}^{T}=
+\begin{bmatrix}
+23.381 &11.705 &11.278\\
+20.126 &10.075  &9.708\\
+18.498  &9.26   &8.923\\
+16.871  &8.446  &8.137
+\end{bmatrix}$\par\indent
+\par
+$e=187.139$\par\indent
+\par
+rank 2:\par\indent
+\par
+$\hat{B}=\sigma_{1}u_{1}v_{1}^{T}+\sigma_{2}u_{2}v_{2}^{T}=
+\begin{bmatrix}
+20.011 &10.024 &19.993\\
+20.014 &10.02   &9.996\\
+20.014 &10.016  &5.004\\
+20.018 &10.015 &0   
+\end{bmatrix}$\par\indent
+\par
+$e=0.000$
+
+
+\subsection*{2.}
+\subsubsection*{(a)}
+Setting 1:\par
+uncompressed bitrate = $30 \times (720 \times 480 \times 8 + 720 \times \frac{1}{2} \times 480 \times 8 \times 2) = 165.888 \ {\rm Mbps}$\par
+average compression ratio = $
+\frac{1}{9} \times \frac{1}{10}+
+\frac{2}{9} \times \frac{1}{20}+
+\frac{6}{9} \times \frac{1}{50}
+=0.036$\par
+bitrate = $5.898 \ {\rm Mbps}$\par\indent
+\par
+Setting 2:\par
+uncompressed bitrate = $30 \times (720 \times 480 \times 8 + 720 \times \frac{1}{2} \times 480 \times \frac{1}{2} \times 8 \times 2) = 124.416 \ {\rm Mbps}$\par
+average compression ratio = $
+\frac{1}{9} \times \frac{1}{10}+
+\frac{2}{9} \times \frac{1}{20}+
+\frac{6}{9} \times \frac{1}{50}
+=0.036$\par
+bitrate = $4.424 \ {\rm Mbps}$\par\indent
+\par
+
+Setting 3:\par
+uncompressed bitrate = $30 \times (720 \times 480 \times 8 + 720 \times \frac{1}{2} \times 480 \times \frac{1}{2} \times 8 \times 2) = 124.416 \ {\rm Mbps}$\par
+average compression ratio = $
+\frac{1}{12} \times \frac{1}{10}+
+\frac{2}{12} \times \frac{1}{20}+
+\frac{9}{12} \times \frac{1}{50}
+=0.032$\par
+bitrate = $3.940 \ {\rm Mbps}$\par\indent
+\par
+Setting 2 is most suitable.
+\subsubsection*{(b)}
+Spatial redundancy : JPEG-based compression in I-frame\par
+Temporal redundancy : motion estimation and compensation in B, P- frame\par
+Psycho-visual redundancy : Chroma subsampling\par
+\subsubsection*{(c)}
+computational complexity and compression ratio\par
+2D Logarithmic Search
+
+\subsection*{3.}
+\subsubsection*{(c)}
+polynomial dataword = $x^{7}+x^{5}+x^{2}+x+1$\par
+augemnted polynomial dataword = $x^{11}+x^{9}+x^{6}+x^{5}+x^{4}$\par
+remainder = 1\par
+codeword = $x^{11}+x^{9}+x^{6}+x^{5}+x^{4}+1$\par
+decoded dataword = $x^{7}+x^{5}+x^{2}+x+1$\par
+
+
+\subsection*{5.}
+\subsubsection*{(b)}
+Low packet Loss\par
+High throughput\par
+Low packet duplication
+
+\clearpage
+
+
+\section*{2020 - 2021}
+\subsection*{1.}
+\subsubsection*{(a)}
+(i)\par
+A 0\par
+B 10\par
+C 111\par
+D 110\par\indent
+\par
+
+(ii)\par
+$8000 \times (0.36 \times 1 + 0.30 \times 2 + 0.34 \times 3) \div 8 = 1980 \ {\rm bytes}$
+\subsubsection*{(b)}
+$\begin{cases}
+p+q=0.25 \\
+2p+(0.18+0.16+0.14+0.12+0.10)\times 3+(0.05+q)\times 4=1
+\end{cases}$\par\indent
+\par
+$\begin{cases}
+p=0.175 \\
+p=0.075
+\end{cases}$\par\indent
+\par
+Not optimal
+
+\subsection*{2.}
+\subsubsection*{(a)}
+\textbf{in s1.pdf}
+
+\subsection*{3.}
+\subsubsection*{(a)}
+(i)\par
+The average compression factor = $\frac{1}{9}\times \frac{1}{10}+\frac{2}{9}\times \frac{1}{20}+\frac{6}{9}\times \frac{1}{40}=0.0389$\par
+$720 \times 480 \times (1+\frac{1}{2}+\frac{1}{2})\times 8 \times 30 \times 60 \times 50 \times 0.0389 \div 8=2.4192 \times 10^{9} \ {\rm bytes}$
+
+\clearpage
+\section*{2021 - 2022}
+\subsection*{1.}
+\subsubsection*{(a)}
+$\lambda_{1}=10.0089, \ \lambda_{2}=7.9959$
+\subsubsection*{(b)}
+$\lambda_{3, 4}$ are far from real values.
+\subsection*{2.}
+\subsubsection*{(b)}
+(iii)\par
+A $ \rightarrow \begin{bmatrix}
+60 & 0 & 0 & 0 \\
+0    &2.929        & 0   & 7.071 \\
+0 & 0 & 0 & 0 \\
+0   & 7.071     &    0  & 17.071 
+\end{bmatrix}\rightarrow \begin{bmatrix}
+0 & 0 & 0 & 0 \\
+0    &2.929        & 0   & 7.071 \\
+0 & 0 & 0 & 0 \\
+0   & 7.071     &    0  & 17.071 
+\end{bmatrix}$\par
+B $ \rightarrow \begin{bmatrix}
+60 & 0 & 0 & 0 \\
+18.478 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+-7.653 & 0 & 0 & 0 
+\end{bmatrix}\rightarrow \begin{bmatrix}
+0 & 0 & 0 & 0 \\
+18.478 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+7.653 & 0 & 0 & 0 
+\end{bmatrix}$\par\indent
+\par
+A has more distortion.
+
+
+\subsection*{4.}
+\subsubsection*{(a)}
+(i)\par
+$a=1$
+\end{document}
