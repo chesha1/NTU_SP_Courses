@@ -1,10 +1,12 @@
 # Table of Contents
-- [NTU_SP_Courses](#ntu_sp_courses)
-  - [EE6204 System Analysis](#ee6204-system-analysis)
-  - [EE6401 Adavanced Digital Signal Processing](#ee6401-adavanced-digital-signal-processing)
-  - [EE6402 Real-time DSP Processing and Applications](#ee6402-real-time-dsp-processing-and-applications)
-  - [EE6427 Video Signal Processing](#ee6427-video-signal-processing)
-  - [EE7401 Probability & Random Processes](#ee7401-probability--random-processes)
+- [EE6204 System Analysis](#ee6204-system-analysis)
+- [EE6401 Adavanced Digital Signal Processing](#ee6401-adavanced-digital-signal-processing)
+- [EE6402 Real-time DSP Processing and Applications](#ee6402-real-time-dsp-processing-and-applications)
+- [EE6403 Distributed Multimedia Systems](#ee6403-distributed-multimedia-systems)
+- [EE6427 Video Signal Processing](#ee6427-video-signal-processing)
+- [EE7401 Probability & Random Processes](#ee7401-probability--random-processes)
+  
+
 # NTU_SP_Courses
 Nanyang Technological University School of EEE Signal Processing Program  
 
@@ -54,6 +56,10 @@ This book has same or more reputation than the former book, and it is also a gre
 #### VLSI Digital Signal Processing Systems: Design and Implementation
 在讲Part 4的时候，如果觉得不够，可以看一下这本书，虽然我觉得看PPT和课程视频完全够用了
 
+## EE6403 Distributed Multimedia Systems
+看PPT就行了，和EE6427有部分内容一样  
+考核方式：一次作业，一次quiz。作业难度一般，quiz难度中等偏上，背诵量中等偏上。  
+期末考试难度一般，背诵量中等偏上。  
 
 ## EE6427 Video Signal Processing
 This course covers a wide range of complex topics, and as there is a change of teacher in 2022, there are no previous years' questions available for the exam.  
