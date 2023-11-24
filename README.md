@@ -1,10 +1,13 @@
 # Table of Contents
-- [EE6204 System Analysis](#ee6204-system-analysis)
-- [EE6401 Adavanced Digital Signal Processing](#ee6401-adavanced-digital-signal-processing)
-- [EE6402 Real-time DSP Processing and Applications](#ee6402-real-time-dsp-processing-and-applications)
-- [EE6403 Distributed Multimedia Systems](#ee6403-distributed-multimedia-systems)
-- [EE6427 Video Signal Processing](#ee6427-video-signal-processing)
-- [EE7401 Probability & Random Processes](#ee7401-probability--random-processes)
+- [Table of Contents](#table-of-contents)
+- [NTU\_SP\_Courses](#ntu_sp_courses)
+  - [EE6204 System Analysis](#ee6204-system-analysis)
+  - [EE6227 Genetic Algorithms and Machine Learning](#ee6227-genetic-algorithms-and-machine-learning)
+  - [EE6401 Adavanced Digital Signal Processing](#ee6401-adavanced-digital-signal-processing)
+  - [EE6402 Real-time DSP Processing and Applications](#ee6402-real-time-dsp-processing-and-applications)
+  - [EE6403 Distributed Multimedia Systems](#ee6403-distributed-multimedia-systems)
+  - [EE6427 Video Signal Processing](#ee6427-video-signal-processing)
+  - [EE7401 Probability \& Random Processes](#ee7401-probability--random-processes)
   
 
 # NTU_SP_Courses
@@ -27,9 +30,16 @@ There will be two open-book quizzes that are not particularly difficult, and the
 课程内容比较容易，所以我不会推荐很多教材。  
 课程会有两道不是特别难的开卷小测验，期末考试也不难。 准备期末考试也不需要背诵太多内容。  
 
-### Textbooks  
+**Textbooks**  
 #### Introduction to Operations Research, 9th edition, Frederick S. Hillier  
 This book has Chinese translated edition. This book is mostly recommended. It is a classic textbook in China, so you may be familiar with it.
+
+## EE6227 Genetic Algorithms and Machine Learning
+看PPT就行了  
+
+考核方式：有两次作业和一次 quiz，难度不大  
+
+考试：注意下往年题型，有两种计算题是那种几乎年年考的。老师最后给的复习的 pdf 里列举的知识点，和考试需要写的内容重合度很高，注意一下。总体难度不高，背诵量中等   
 
 
 ## EE6401 Adavanced Digital Signal Processing
@@ -41,7 +51,7 @@ The assessment method for this course includes homework, quizzes, and a final ex
 这门课比较难，不推荐选，最好本科学过数字信号处理，但是没学过问题也不大  
 考核方式：作业+测验+期末考试，作业很难，比考试还难，考试也很难。需要背诵的内容适中  
 
-### Textbooks 
+**Textbooks** 
 #### Digital Signal Processing: Pearson New International Edition, 4th edition, Proakis
 This book is the only textbook used by the lecturer, and I would like to remind you that It has a solution manual.
 #### Digital Signal Processing: Principles, Algorithms, and Applications, 4th edition, Proakis
@@ -52,7 +62,7 @@ This book has same or more reputation than the former book, and it is also a gre
 ## EE6402 Real-time DSP Processing and Applications
 看PPT就行了  
 考核方式：两次作业，难度简单。期末考试难度一般，需要的背诵量一般  
-### Textbooks
+**Textbooks**
 #### VLSI Digital Signal Processing Systems: Design and Implementation
 在讲Part 4的时候，如果觉得不够，可以看一下这本书，虽然我觉得看PPT和课程视频完全够用了
 
@@ -68,7 +78,7 @@ The assessment for the course comprises of homework, quizzes, and exams. The hom
 课程内容多且杂，由于2022年换老师了，所以考试没什么往年题可以参考  
 考核方式：作业+测验+考试。作业很简单，只需要文字论述方案，不需要写代码。测验和考试单纯难度不高，但是需要把很长很长很长的PPT都理解，背诵量大。
 
-### Textbooks 
+**Textbooks** 
 #### Digital Image Processing, 4th edition, Gonzalez
 This book has Chinese translated edition. This book is mostly recommended. It is a classic textbook in China, so you may be familiar with it. This book includes many theortical things and formulas.
 
@@ -91,6 +101,6 @@ Assessment for this course involves two homework assignments and an exam, with b
 考核方式：2次作业+考试，作业难度一般，考试难度一般
 概率论部分看PPT就行了，不用看书，PPT上有的内容根本不考，每年题型都很固定，但是会有小变化，比如往年考普通MMSE，今年考Linear MMSE  
 
-### Textbooks
+**Textbooks**
 #### Probability, Random Variables and Stochastic Processes
 老师用的教材，抽了几章中的部分内容出来讲，有中文版和习题解答
