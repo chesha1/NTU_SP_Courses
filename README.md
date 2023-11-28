@@ -2,6 +2,7 @@
 - [Table of Contents](#table-of-contents)
 - [NTU\_SP\_Courses](#ntu_sp_courses)
   - [EE6204 System Analysis](#ee6204-system-analysis)
+  - [EE6222 Machine Vision](#ee6222-machine-vision)
   - [EE6227 Genetic Algorithms and Machine Learning](#ee6227-genetic-algorithms-and-machine-learning)
   - [EE6401 Adavanced Digital Signal Processing](#ee6401-adavanced-digital-signal-processing)
   - [EE6402 Real-time DSP Processing and Applications](#ee6402-real-time-dsp-processing-and-applications)
@@ -20,6 +21,8 @@ Various textbooks may be referenced in this repository, but not all of them are 
 关于NTU EEE学院 信号处理项目课程的一些具体内容，不都对，关于课程内容的理解主要以中文书写  
 该仓库中可能会引用各种教科书，但并非所有教科书都是必读的。但是，我还是建议简单浏览一下它们，因为它们对相同的概念提供了不同的解释。 提到的所有书籍都可以在 zlibrary 上找到。
 
+**本仓库中的所有内容不保证正确，尤其是作业和考试的解答**
+
 
 ## EE6204 System Analysis  
 This course will cover linear programming, non-linear programming, random process(especially Markov chain), queue model and decision analysis chronologically.  
@@ -33,6 +36,15 @@ There will be two open-book quizzes that are not particularly difficult, and the
 **Textbooks**  
 #### Introduction to Operations Research, 9th edition, Frederick S. Hillier  
 This book has Chinese translated edition. This book is mostly recommended. It is a classic textbook in China, so you may be familiar with it.
+
+## EE6222 Machine Vision
+课程难度：中等
+
+考核方式：1次quiz，2次作业，期末考试
+
+期末考试：难度高，需要背诵的内容中等偏多。除了本门课过去的试卷，还可以参考一下EE7403的试卷
+
+
 
 ## EE6227 Genetic Algorithms and Machine Learning
 看PPT就行了  
