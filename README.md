@@ -19,6 +19,7 @@ This repository contains detailed information about the courses offered in the S
 Various textbooks may be referenced in this repository, but not all of them are mandatory reading. However, I suggest scanning through them briefly, as they offer different explanations of the same concepts. All books mentioned in this repository are available on zlibrary.  
   
 关于NTU EEE学院 信号处理项目课程的一些具体内容，不都对，关于课程内容的理解主要以中文书写  
+
 该仓库中可能会引用各种教科书，但并非所有教科书都是必读的。但是，我还是建议简单浏览一下它们，因为它们对相同的概念提供了不同的解释。 提到的所有书籍都可以在 zlibrary 上找到。
 
 **本仓库中的所有内容不保证正确，尤其是作业和考试的解答**
@@ -30,7 +31,9 @@ The course content is relatively easy to grasp, so I will only suggest a few not
 There will be two open-book quizzes that are not particularly difficult, and the final exam will also be manageable. There is not much memorization required to prepare for the exam.  
 
 本课程，按时间顺序，包括线性规划、非线性规划、随机过程（尤其是马尔可夫链）、队列模型和决策分析。  
+
 课程内容比较容易，所以我不会推荐很多教材。  
+
 课程会有两道不是特别难的开卷小测验，期末考试也不难。 准备期末考试也不需要背诵太多内容。  
 
 **Textbooks**  
@@ -60,7 +63,9 @@ This course is considered difficult and is not recommended for those without a b
 The assessment method for this course includes homework, quizzes, and a final exam. The homework is considered to be more challenging than the exam, with a moderate amount of memorization required for both.  
 
 主要内容：多速率数字信号处理、线性预测和最优线性滤波器和功率谱估计，就是教材上的三章内容，不像别的课一样，教学内容分散在各种书的各种地方，教学内容集中，比较方便看，但是因为这一块属于数字信号处理的冷门内容，网上的教学视频和其他教学材料又比较少，没有太多的材料可供自学  
+
 这门课比较难，不推荐选，最好本科学过数字信号处理，但是没学过问题也不大  
+
 考核方式：作业+测验+期末考试，作业很难，比考试还难，考试也很难。需要背诵的内容适中  
 
 **Textbooks** 
@@ -73,14 +78,18 @@ This book has same or more reputation than the former book, and it is also a gre
 
 ## EE6402 Real-time DSP Processing and Applications
 看PPT就行了  
+
 考核方式：两次作业，难度简单。期末考试难度一般，需要的背诵量一般  
+
 **Textbooks**
 #### VLSI Digital Signal Processing Systems: Design and Implementation
 在讲Part 4的时候，如果觉得不够，可以看一下这本书，虽然我觉得看PPT和课程视频完全够用了
 
 ## EE6403 Distributed Multimedia Systems
 看PPT就行了，和EE6427有部分内容一样  
+
 考核方式：一次作业，一次quiz。作业难度一般，quiz难度中等偏上，背诵量中等偏上。  
+
 期末考试难度一般，背诵量中等偏上。  
 
 ## EE6427 Video Signal Processing
@@ -88,6 +97,7 @@ This course covers a wide range of complex topics, and as there is a change of t
 The assessment for the course comprises of homework, quizzes, and exams. The homework assignments are relatively simple, requiring only a written discussion of the plan without the need for code. The quizzes and exams are not considered to be very difficult, but students are required to have a deep understanding of the extensive and detailed PPT materials provided. Additionally, **a significant amount of recitation** is expected for students.  
 
 课程内容多且杂，由于2022年换老师了，所以考试没什么往年题可以参考  
+
 考核方式：作业+测验+考试。作业很简单，只需要文字论述方案，不需要写代码。测验和考试单纯难度不高，但是需要把很长很长很长的PPT都理解，背诵量大。
 
 **Textbooks** 
@@ -110,7 +120,9 @@ This course, along with EE6204 and EE6401, covers stochastic processes. While th
 Assessment for this course involves two homework assignments and an exam, with both being of average difficulty. Probability theory can be studied solely through the PPT materials provided, as the content not covered in the PPT is not included in the exam. The exam format is generally consistent year after year, with minor variations such as testing on linear MMSE in one year instead of testing on ordinary MMSE in previous years.  
 
 这门课和EE6204 EE6401都涉及随机过程，但是侧重点都不同，相互之间可以算有点配合，课本身的难度不高
+
 考核方式：2次作业+考试，作业难度一般，考试难度一般
+
 概率论部分看PPT就行了，不用看书，PPT上有的内容根本不考，每年题型都很固定，但是会有小变化，比如往年考普通MMSE，今年考Linear MMSE  
 
 **Textbooks**
